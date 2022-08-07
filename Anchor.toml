@@ -7,7 +7,7 @@ kosmic_dao_raffle = "6hQVmZSoUjWdBniVExRorWJxCDFmJwznXis2HSopBdu6"
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "devnet"
+cluster = "localnet"
 wallet = "./id.json"
 
 [scripts]

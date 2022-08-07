@@ -1,12 +1,12 @@
 import { BN, Program } from "@project-serum/anchor";
-import { SolanaRaffles } from '../context/kosmic_dao_raffle';
+import { KosmicRaffle } from '../context/kosmic_dao_raffle';
 import { PublicKey, Keypair, SystemProgram, SYSVAR_RENT_PUBKEY } from '@solana/web3.js';
 import { ASSOCIATED_PROGRAM_ID, TOKEN_PROGRAM_ID } from "@project-serum/anchor/dist/cjs/utils/token";
 import { ASSOCIATED_TOKEN_PROGRAM_ID } from '@solana/spl-token';
 import { getAtaForMint } from "./accounts";
 
 export const createRaffle = async (
-    program: Program<SolanaRaffles>,
+    program: Program<KosmicRaffle>,
     fee: number,
     title: string,
     description: string,
@@ -44,7 +44,7 @@ export const createRaffle = async (
 }
 
 export const closeRaffle = async (
-    program: Program<SolanaRaffles>,
+    program: Program<KosmicRaffle>,
     authority: PublicKey,
     raffle: PublicKey
 ) => {
@@ -58,7 +58,7 @@ export const closeRaffle = async (
 }
 
 export const purchaseTicket = async (
-    program: Program<SolanaRaffles>,
+    program: Program<KosmicRaffle>,
     authority: PublicKey,
     participant: PublicKey,
     raffle: PublicKey,
