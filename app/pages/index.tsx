@@ -16,7 +16,7 @@ const Home: NextPage = () => {
 
   const fetchRaffles = async () => {
     if (!program) return;
-    const data = await program.program.account.Raffle.all();
+    const data = await program.program.account.raffle.all();
     await new Promise((r) => setTimeout(r, 2000));
     console.log("Accounts: ", data);
     setRaffles(
