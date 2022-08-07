@@ -168,7 +168,7 @@ export type KosmicRaffle = {
   ],
   "accounts": [
     {
-      "name": "Raffle",
+      "name": "raffle",
       "type": {
         "kind": "struct",
         "fields": [
@@ -417,7 +417,7 @@ export const IDL: KosmicRaffle = {
   ],
   "accounts": [
     {
-      "name": "Raffle",
+      "name": "raffle",
       "type": {
         "kind": "struct",
         "fields": [
