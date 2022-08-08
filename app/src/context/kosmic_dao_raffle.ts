@@ -212,7 +212,7 @@ export type KosmicRaffle = {
       }
     },
     {
-      "name": "Ticket",
+      "name": "ticket",
       "type": {
         "kind": "struct",
         "fields": [
@@ -461,7 +461,7 @@ export const IDL: KosmicRaffle = {
       }
     },
     {
-      "name": "Ticket",
+      "name": "ticket",
       "type": {
         "kind": "struct",
         "fields": [
